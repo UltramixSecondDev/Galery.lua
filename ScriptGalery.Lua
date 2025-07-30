@@ -120,7 +120,7 @@ local function createScriptItem(name, content)
     icon.Size = UDim2.new(0, 80, 0, 80)  
     icon.Position = UDim2.new(0.5, -40, 0, 8)  
     icon.BackgroundTransparency = 1  
-    icon.Image = "rbxassetid://87989858762802" -- Por ahora icono default, se puede mejorar detectando tipo  
+    icon.Image = "rbxassetid://101413617289897" -- Por ahora icono default, se puede mejorar detectando tipo  
     icon.AutoButtonColor = false  
  
     local label = Instance.new("TextLabel", frame)  
@@ -173,7 +173,7 @@ end)
  
 -- Cerrar GUI
 closeBtn.MouseButton1Click:Connect(function()
-    gui:Destroy()
+    gui.Enabled = false
 end)
  
 -- Tema (oscuro/claro) - opción sencilla para la demo
